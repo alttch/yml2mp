@@ -9,3 +9,9 @@ edition = "2021"
 eva-common = "0.1.67"
 serde_yaml = "0.8.23"
 rmp-serde = "1.0.0"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+
